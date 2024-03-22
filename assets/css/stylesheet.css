@@ -1,0 +1,530 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(120deg, #6c3483, #00d0ff);
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(0, 255, 204);
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label   {
+    top: -5px;
+    color: #6C3483;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before   {
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+input[type="botoniniciar"]{
+    width: 100%;
+    height: 50px;
+    border: auto, solid;
+    background: #6C3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    div {
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+input[type="botoniniciar"]:hover{
+    border-color: purple;
+    transition: .5s;
+}
+
+.registrarse{
+margin: 30px 0;
+text-align: center;
+font-size: 16px;
+color: black;
+}
+
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+
+.invitado {
+    text-decoration: none;
+}
+
+
+.container1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.container1 h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+
+.container1 input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.container1 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.container1 span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.container1 input:focus ~ label,
+.container1 input:focus ~ label   {
+    top: -5px;
+    color: #6C3483;
+}
+
+.container1 input:focus ~ span::before,
+.container1 input:focus ~ span::before   {
+    width: 100%;
+}
+
+.container1{
+    margin: -5px 0 20px 5px;
+    color: rgb(13, 101, 101);
+    cursor: pointer;
+}
+
+.container1:hover {
+    text-decoration: underline;
+}
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
+
+.row {
+    background-color: #ffffff;
+    padding: 10px;
+}
+ 
+.text {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    padding: 10px;
+    color: #0000FF;
+    position: absolute;
+    z-index: 1;
+}
+ 
+.background {
+    width: 200px;
+    height: 100px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+ 
+.trans {
+    opacity: 0.5;
+}
+
+
+.fin_sesion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.fin_sesion h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+
+.fin_sesion input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.fin_sesion label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.fin_sesion input:focus ~ span::before,
+.fin_sesion input:focus ~ span::before   {
+    width: 100%;
+}
+
+.fin_sesion{
+    margin: -5px 0 20px 5px;
+    color: rgb(13, 101, 101);
+    cursor: pointer;
+}
+
+.buttoniniciosesion:hover {
+        background: linear-gradient(#12839d, #5500ff);
+}
+.btn-info {
+        display: block;
+        margin: auto;
+}
+
+.container-md {
+    width: 200px;
+    height: 100px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.add-transaction{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+
+.add-transaction{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.add-transaction{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.add-transaction span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.add-transaction input:focus ~ label,
+.add-transaction input:focus ~ label   {
+    top: -5px;
+    color: #6C3483;
+}
+
+.add-transaction input:focus ~ span::before,
+.add-transaction input:focus ~ span::before   {
+    width: 100%;
+}
+
+.add-transaction{
+    margin: -5px 0 20px 5px;
+    color: rgb(13, 101, 101);
+    cursor: pointer;
+}
+
+.add-transaction:hover {
+    text-decoration: underline;
+}
+
+.subtract-transaction{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+
+.subtract-transaction{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.subtract-transaction{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.subtract-transaction span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.subtract-transaction input:focus ~ label,
+.subtract-transaction input:focus ~ label   {
+    top: -5px;
+    color: #6C3483;
+}
+
+.subtract-transaction input:focus ~ span::before,
+.subtract-transaction input:focus ~ span::before   {
+    width: 100%;
+}
+
+.subtract-transaction{
+    margin: -5px 0 20px 5px;
+    color: rgb(13, 101, 101);
+    cursor: pointer;
+}
+
+.subtract-transaction:hover {
+    text-decoration: underline;
+}
+
+.transaction-history input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.transaction-history label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.transaction-history span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.transaction-history input:focus ~ label,
+.transaction-history input:focus ~ label   {
+    top: -5px;
+    color: #6C3483;
+}
+
+.transaction-history input:focus ~ span::before,
+.transaction-history input:focus ~ span::before   {
+    width: 100%;
+}
+
+.transaction-history{
+    margin: -5px 0 20px 5px;
+    color: rgb(13, 101, 101);
+    cursor: pointer;
+}
+
+.transaction-history:hover {
+    text-decoration: underline;
+}
+
+
