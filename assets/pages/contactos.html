@@ -15,45 +15,15 @@
             <li><a href="/assets/pages/ewallet.html">Inicio</a></li>
             <li><a href="/assets/pages/tu_cuenta.html">Tu Cuenta</a></li>
             <li><a href="/assets/pages/transacciones.html">Transacciones</a></li>
-            <li><a href="/assets/pages/enviar_dinero.html">Enviar Dinero</a></li>
+            <li><a href="/assets/pages/contactos.html">Contactos</a></li>
             <li><a href="/assets/pages/fin_sesion.html">Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" title="HOME" href="menu.html">
-                <div class="home" alt="Volver al Menú Principal"></div>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="deposit.html">Depositar</a>
-                    <a class="nav-link" href="sendmoney.html">Enviar Dinero</a>
-                    <a class="nav-link" href="transactions.html">Últimos Movimientos</a>
-                </div>
-        </div>
-            <span class="navbar-text">
-                <a style="float: right;" title="LOGIN" href="index.html">
-                    <span style="float: left; margin-right: 10px;"> LOGIN </span> 
-                    <div class="login"style="float: left;"></div> 
-                </a> 
-            </span>
-        </div>
-    </nav>
-
-    <br>
-
-    <div class="card text-center  m-auto" style="width: 700px;">
+    <div class="card text-center m-auto" style="top: 10px"> 
         <div class="card-header">
 
-            <h2 class="text-center">Enviar Dinero </h2>
+            <h2 class="text-center">Contactos </h2>
 
         </div>
         <div class="card-body">
@@ -65,16 +35,17 @@
             <input type="text" class="form-control" id="searchContact" placeholder="Ingrese contacto">
         </div>
                     <div class="col-sm-2">
-            <button type="submit" class="btn btn-primary mb-2" style="float: right;">Buscar</button>
+<!--Boton Buscar-->
+            <button onclick="boton_buscar()"type="submit" class="btn btn-primary mb-2" style="float: right;">Buscar</button>
         </div>
 
     </div>
 
 </form>
 
-            <hr>
-
-<button style="float: left;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar nuevo contacto</button>             
+    <hr>
+<!--Boton agregar contacto-->
+<button onclick="modal_agregar_contacto()" style="float: left;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar nuevo contacto</button>             
 
 
 
@@ -117,7 +88,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-center" id="exampleModalLabel">Agregar nuevo contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button onclick="agregar_contacto()" type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button onclick="myFunction()">Try it</button>
                 </div>
 
 <form>

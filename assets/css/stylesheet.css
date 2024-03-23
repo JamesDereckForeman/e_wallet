@@ -1,3 +1,21 @@
+
+@media (min-width: 576px) { 
+}
+
+@media (min-width: 768px) { 
+}
+
+@media (min-width: 992px) { 
+}
+
+
+@media (min-width: 1200px) { 
+}
+
+
+@media (min-width: 1400px) { 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -527,4 +545,49 @@ color: black;
     text-decoration: underline;
 }
 
+.container-md{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    height: 170px;
+    padding-top: 20px;
+}
+
+.container-md h3{
+    text-align: center;
+    padding: 10 0 10px 0;
+    border-bottom: 1px solid silver;
+}
+
+
+.container-md input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16 px;
+    border: none;
+    background:none ;
+    outline: none;
+}
+
+.container-md label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.card text-center m-auto {
+        width: 700px;
+        border-top-width: 1px;
+        top: 20px;
+        }
 
