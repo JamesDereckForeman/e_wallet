@@ -12,31 +12,31 @@
     <h2>E WALLET</h2>
     <nav><!--BARRA DE NAVEGACION-->
         <ul>
-            <li><a href="/assets/pages/ewallet.html">Inicio</a></li>
+            <li><a href="/assets/pages/menu.html">Inicio</a></li>
             <li><a href="/assets/pages/tu_cuenta.html">Tu Cuenta</a></li>
             <li><a href="/assets/pages/transacciones.html">Transacciones</a></li>
             <li><a href="/assets/pages/contactos.html">Contactos</a></li>
+            <li><a href="/assets/pages/historial.html">Historial</a></li>
             <li><a href="/assets/pages/fin_sesion.html">Cerrar sesión</a></li>
         </ul>
     </nav>
 </header>
-    <div class="card text-center m-auto" style="top: 10px"> 
-        <div class="card-header">
+<!--nuevo div Contactos-->
+<div class="card text-center m-auto" style="top: 10px"> 
+    <div class="card-header">
 
-            <h2 class="text-center">Contactos </h2>
+        <h2 class="text-center">Contactos </h2>
 
-        </div>
-        <div class="card-body">
-
-            <form>
-                <div class="form-group row">
-                    <label for="depositAmount" class="col-sm-2 col-form-label">Contacto:</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control" id="searchContact" placeholder="Ingrese contacto">
-        </div>
-                    <div class="col-sm-2">
-<!--Boton Buscar-->
-            <button onclick="boton_buscar()"type="submit" class="btn btn-primary mb-2" style="float: right;">Buscar</button>
+    </div>
+    <div class="card-body">
+<form><!--primera tabla contactos-->
+    <div class="form-group row">
+        <label for="depositAmount" class="col-sm-2 col-form-label">Contacto:</label>
+    <div class="col-sm-8">
+        <input type="text" class="form-control" id="searchContact" placeholder="Ingrese contacto">
+    </div>
+        <div class="col-sm-2">
+    <button onclick="boton_buscar()"type="submit" class="btn btn-primary mb-2" style="float: right;">Buscar</button>
         </div>
 
     </div>
@@ -47,8 +47,7 @@
 <!--Boton agregar contacto-->
 <button onclick="modal_agregar_contacto()" style="float: left;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar nuevo contacto</button>             
 
-
-
+<!--Segunda Tabla contactos-->
 <table class="table table-hover">
     <thead class="table-light">
         <tr>
@@ -77,25 +76,25 @@
     </tbody>
 </table>
 
-        </div><!-- card body-->
-    </div><!-- card-->
+</div>
+</div><!--fin nuevo div contactos-->
 
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Agregar nuevo contacto</h5>
-                    <button onclick="agregar_contacto()" type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <button onclick="myFunction()">Try it</button>
-                </div>
-
+<!-- Modal agergar contactos -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog"><!--Div modal dialog-->
+<div class="modal-content"> <!--INICIO contenido del modal-->
+    <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Agregar nuevo contacto</h5>
+            <button onclick="agregar_contacto()" type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button onclick="myFunction()">Try it</button>
+    </div>
+<!--Tercer Tabla Contactos-->
 <form>
     <div class="modal-body">
         <div class="mb-3">
-                            <label for="depositAmount" class="col-sm-2 col-form-label">Nombre:</label>
+                <label for="depositAmount" class="col-sm-2 col-form-label">Nombre:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="searchContact" placeholder="" required="required">
             </div>
@@ -128,9 +127,9 @@
         </div>
 </form>
 
-            </div>
+            </div><!--fin contenido del modal-->
         </div>
-    </div>
+    </div><!--fin Modal Fade-->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,4 +1,4 @@
-
+/*pantalla*/
 @media (min-width: 576px) { 
 }
 
@@ -15,7 +15,7 @@
 
 @media (min-width: 1400px) { 
 }
-
+/*cuerpo general*/
 body {
     margin: 0;
     padding: 0;
@@ -55,7 +55,62 @@ nav a {
 nav a:hover {
     color: rgb(0, 255, 204);
 }
+/*pagina de bienvenida*/
+  .welcome-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+  }
+/*texto bienvenida*/
+  .welcome-text {
+      font-size: 32px;
+      text-align: center;
+      opacity: 0;
+  }
+/*animacion bienvenida*/
+  .fade-in {
+      animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+@keyframes fadeInAnimation {
+0% {
+opacity: 0;
+}
 
+100% {
+opacity: 1;
+}
+}
+/*log in*/
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  }
+
+  th,
+  td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+  }
+
+  th {
+      background-color: #f2f2f2;
+  }
+
+/*inicio de sesion*/
 .formulario{
     position: absolute;
     top: 50%;
@@ -126,129 +181,6 @@ form .username{
     width: 100%;
 }
 
-.recordar{
-    margin: -5px 0 20px 5px;
-    color: blue;
-    cursor: pointer;
-}
-
-.recordar:hover {
-    text-decoration: underline;
-}
-
-input[type="botoniniciar"]{
-    width: 100%;
-    height: 50px;
-    border: auto, solid;
-    background: #6C3483;
-    border-radius: 25px;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
-    padding: 20px 0 20px 0;
-    div {
-    margin-left: auto;
-    margin-right: auto;
-    }
-}
-
-input[type="botoniniciar"]:hover{
-    border-color: purple;
-    transition: .5s;
-}
-
-.registrarse{
-margin: 30px 0;
-text-align: center;
-font-size: 16px;
-color: black;
-}
-
-.registrarse a{
-    color: blue;
-    text-decoration: none;
-}
-
-.registrarse a:hover {
-    text-decoration: underline;
-}
-
-.invitado {
-    text-decoration: none;
-}
-
-
-.container1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    border-radius: 10px;
-}
-
-.container1 h1{
-    text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
-}
-
-
-.container1 input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16 px;
-    border: none;
-    background:none ;
-    outline: none;
-}
-
-.container1 label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.container1 span::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #6C3483;
-    transition: .5s;
-}
-
-.container1 input:focus ~ label,
-.container1 input:focus ~ label   {
-    top: -5px;
-    color: #6C3483;
-}
-
-.container1 input:focus ~ span::before,
-.container1 input:focus ~ span::before   {
-    width: 100%;
-}
-
-.container1{
-    margin: -5px 0 20px 5px;
-    color: rgb(13, 101, 101);
-    cursor: pointer;
-}
-
-.container1:hover {
-    text-decoration: underline;
-}
 .note
 {
     text-align: center;
@@ -282,17 +214,8 @@ color: black;
     background-color: #ffffff;
     padding: 10px;
 }
- 
-.text {
-    width: 200px;
-    height: 100px;
-    background-color: transparent;
-    padding: 10px;
-    color: #0000FF;
-    position: absolute;
-    z-index: 1;
-}
- 
+
+/*fin sesion*/
 .background {
     width: 200px;
     height: 100px;
@@ -355,6 +278,7 @@ color: black;
     cursor: pointer;
 }
 
+/*reinicio de sesion*/
 .buttoniniciosesion:hover {
         background: linear-gradient(#12839d, #5500ff);
 }
@@ -371,7 +295,7 @@ color: black;
     margin: 0px 0px 10px 0px;
 }
 
-
+/*transacciones*/
 .add-transaction{
     text-align: center;
     padding: 0 0 20px 0;
@@ -591,3 +515,75 @@ color: black;
         top: 20px;
         }
 
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px auto;
+background-color: #ffffff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+        
+th,
+td {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+        
+th {
+background-color: #f2f2f2;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+/*fin transacciones*/                
+@media print {
+                
+.table,
+.table__body {
+overflow: visible;
+height: auto !important;
+width: auto !important;
+}
+}
+
+/*historial de transacciones*/
+.transacciones_titulo {
+font-size: 24px;
+opacity: 0;
+/* al inicio escondido */
+ animation: fadeIn 1s ease-in-out forwards;
+/* Aplicar animacion */
+}
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+.transacciones_titulo {
+      color: black;
+      /* color inicial */
+      transition: color 0.3s ease;
+      /* transicion */
+      cursor: pointer;
+      /* animacion en cursor */
+  }
+
+.transacciones_titulo:hover {
+      color: white;
+      /* invertir colores en hover */
+  }
